@@ -23,13 +23,13 @@ However, for non-Debian Linux OS', if you replace the package management command
 INSTRUCTIONS
 -
 
-These are located on the script itself "config-NFS-SystemD-mounts.sh" but generally just change the values of the variables and then execute the script. It will install some NFS packages, create a SystemD mount and finally the related SystemD service to mount it. Obviously you should have created the NFS share on the storage host in advance of using this script.
+These are located on the script itself "config-NFS-SystemD-mounts.sh" but generally just change the values of the variables and then execute the script. It will install some NFS packages, create a SystemD mount and finally create the related SystemD service to mount it. Obviously you should have created the NFS share on the storage host in advance of using this script.
 
 
 iSCSI ?!?!?
 -
 
-Although NFS is suitable for sharing a filesystem across hosts, if you don't want frequent writes trashing your MicroSD card, I have a repoo that automates raising an iSCSI volume which avoids direct writes to the local filesystem. I did this for 8GB Raspberry Pi hosts so II could run Docker containers on them:
+Although NFS is suitable for sharing a filesystem across hosts, if you don't want frequent writes trashing your MicroSD card, I have a repo that automates raising an iSCSI volume which avoids direct writes to the local filesystem. I did this for 8GB Raspberry Pi hosts so I could run Docker containers on them:
 
 https://github.com/f1linux/iscsi-automount
 
