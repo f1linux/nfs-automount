@@ -35,7 +35,6 @@ echo
 
 # Full LICENSE found [HERE](./LICENSE)
 
-
 #######   INSTRUCTIONS   #######
 
 # This script mounts an NFS folder to the path '/mnt/' per FHS guidance
