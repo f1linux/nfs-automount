@@ -8,8 +8,8 @@ echo
 echo '# Script Author:	Terrence Houlahan, Linux & Network Engineer F1Linux.com'
 echo '# Author Site:		http://www.F1Linux.com'
 echo
-echo '# Script Version:	1.00.00'
-echo '# Script Date:		20230916'
+echo '# Script Version:	1.00.01'
+echo '# Script Date:		20240407'
 
 echo
 echo '# These scripts and others by the author can be found at:'
@@ -75,6 +75,12 @@ TIMEOUTIDLESEC='30'
 
 ## NOTE: Most settings shown below work out of the box
 
+
+# Exit if script not executed with sudo
+if [ `id -u` -ne 0 ]; then
+  echo "Please execute script as root or using sudo!"
+  exit
+fi
 
 echo "$(tput setaf 5)#######   Install NFS Packages   #######$(tput sgr 0)"
 echo
